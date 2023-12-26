@@ -22,5 +22,16 @@ int main() {
         cout<<"\n****************************";
         cout<<"\nEnter your choiec: ";
         cin>>choice;
+        
+        switch(choice) {
+            case 1: {
+                int num;
+                cout<<"\nEntre a number to insert: ";
+                cin>>num;
+                
+                tree->insert(num);
+                break;
+            }
+        }
     }
 }
