@@ -32,6 +32,20 @@ int main() {
                 tree->insert(num);
                 break;
             }
+            case 2: {
+                
+                break;
+            }
+            case 3: {
+                cout<<"\nExiting....\n";
+                return 0;
+            }
+            default:
+                cout<<"\nInvalid choice.";
         }
-    }
+        cout<<"\nDo you want to repeat? Press Y: ";
+        cin>>ch;
+    }while(ch == 'Y' || ch == 'y');
+    
+    return 0;
 }
