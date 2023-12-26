@@ -50,7 +50,7 @@ void BinaryTree::insert(int num) {
         temp->setLeft(newNode);
         cout<<"\nThe new node is inserted successfully.";
     }
-//    else
+    else
     {
         temp->setRight(newNode);
         cout<<"\nThe new node is inserted successfully.";
