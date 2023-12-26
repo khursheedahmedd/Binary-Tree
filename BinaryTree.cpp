@@ -28,27 +28,34 @@ void BinaryTree::insert(int num) {
         cout<<"\nThe new node is inerted successfully.";
     }
     
-    TreeNode* temp = root;
-    while(temp != NULL) {
-        if(num > temp->getData() && temp->getRight() == NULL) {
-            temp->setRight(newNode);
-            count++;
-            
-            cout<<"\nThe new node is inserted succussfully.";
+    TreeNode *temp = root;
+    TreeNode *current = root;
+    
+    while (current != nullptr)
+    {
+        
+        if (num < current->getData())
+        {
+            current = current->getLeft();
         }
-        else if (temp->getLeft() == NULL) {
-            temp->setLeft(newNode);
-            count++;
-            
-            cout<<"\nThe new node is inserted succussfully.";
+        else
+        {
+            current = current->getRight();
         }
-        else if(num > temp->getData()) {
-            temp = temp->getRight();
-        }
-        else {
-            temp = temp->getLeft();
-        }
+        temp = current;
     }
+
+    if (num < temp->getData())
+    {
+        temp->setLeft(newNode);
+        cout<<"\nThe new node is inserted successfully.";
+    }
+    else
+    {
+        temp->setRight(newNode);
+        cout<<"\nThe new node is inserted successfully.";
+    }
+
 }
 
 void BinaryTree::display() {
@@ -92,4 +99,3 @@ void BinaryTree::display() {
     cout << endl;
 }
 
-}
