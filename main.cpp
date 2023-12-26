@@ -33,7 +33,7 @@ int main() {
                 break;
             }
             case 2: {
-                
+                tree->display();
                 break;
             }
             case 3: {

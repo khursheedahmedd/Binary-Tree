@@ -19,6 +19,7 @@ public:
     ~BinaryTree();
     
     void insert(int);
+    void display();
 };
 
 #endif /* BinaryTree_hpp */
