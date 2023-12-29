@@ -20,6 +20,9 @@ public:
     
     void insert(int);
     void display();
+    void search(int);
+    int findMin();
+    int findMax();
 };
 
 #endif /* BinaryTree_hpp */
