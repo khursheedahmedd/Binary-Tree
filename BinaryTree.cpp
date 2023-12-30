@@ -61,7 +61,7 @@ void BinaryTree::insert(int num)
         parent->setRight(newNode);
     }
 
-    std::cout << "\nThe new node is inserted successfully.";
+    // std::cout << "\nThe new node is inserted successfully.";
 }
 
 void BinaryTree::display()
